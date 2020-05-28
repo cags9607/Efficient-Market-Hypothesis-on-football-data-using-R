@@ -4,7 +4,7 @@ efficiency.test <- function(home_odds,draw_odds,away_odds,Res,omit.messages = T)
   # Compute the implicit probabilities for each match outcome
   p_home  <- 1/home_odds       # Probability of a Home victory.
   p_draw  <- 1/draw_odds       # Probability of a draw outcome.
-  p_away  <- 1/away_odds       # Probabilidad of an Away victory
+  p_away  <- 1/away_odds       # Probability of an Away victory
   
   # Calculate the average fee that bookmakers charge
   over_round = p_home + p_draw + p_away - 1
