@@ -145,7 +145,7 @@ plot3 <- df %>%
 cowplot::plot_grid(plot2,plot3,plot1)
 ```
 
-![](efficiency-github_files/figure-gfm/fittedvsimplicit-1.png)<!-- -->
+![](fittedvsimplicit-1.png)<!-- -->
 
 From the plot it seems that the bookmakers tend to offer generous odds
 when the match outcome is highly probable. However, the above procedure
