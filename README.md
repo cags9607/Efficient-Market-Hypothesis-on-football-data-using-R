@@ -31,7 +31,7 @@ The output:
 
   - A function object *l*, the log likelihood function
 
-  - A matrix *fitted.values* of dimension length(Res)$$3, containing the
+  - A matrix *fitted.values*, containing the
     fitted values for each match.
 
   - A floating number *LR*, the likelihood ratio.
@@ -41,7 +41,7 @@ The output:
   - A floating number *L1*, the log-likelihood of the maximum likelihood
     estimator.
 
-  - A *std.errors*, vector of standard errors for the parameter theta.
+  - A vector *std.errors*, the standard errors for the parameter theta.
 
 # A simple example using data for Mexican League:
 
