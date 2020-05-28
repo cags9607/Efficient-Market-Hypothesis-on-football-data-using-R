@@ -91,7 +91,7 @@ It seems that there is not enough evidence to claim that the bookmakers
 average odds are not an unbiased estimator of the match outcome for the
 Mexican League *Liga MX*.
 
-Let’s plot fitted values against implied probabilities:
+Let’s plot fitted values against implicit probabilities:
 
 ``` r
 library(tidyverse)
@@ -147,8 +147,8 @@ cowplot::plot_grid(plot2,plot3,plot1)
 
 ![](fittedvsimplicit-1.png)<!-- -->
 
-From the plot it seems that the bookmakers tend to offer generous odds
-when the match outcome is highly probable. However, the above procedure
+From the plot it seems that bookmakers tend to offer generous odds
+when the match outcome is highly probable. However, the above test
 says that chance alone would produce this result about 36% of the time.
 
 # References
