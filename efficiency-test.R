@@ -7,12 +7,12 @@ efficiency.test <- function(home_odds,draw_odds,away_odds,Res,omit.messages = T)
   p_away  <- 1/away_odds       # Probabilidad of an Away victory
   
   # Calculate the average fee that bookmakers charge
-  over_round = p_home + p_draw + p_away 
+  over_round = p_home + p_draw + p_away - 1
   
   # Normalize
-  p_home  <- p_home*(1/over_round)
-  p_draw  <- p_draw*(1/over_round)
-  p_away  <- p_away*(1/over_round)
+  p_home  <- p_home*(1/(over_round+1))
+  p_draw  <- p_draw*(1/(over_round+1))
+  p_away  <- p_away*(1/(over_round+1))
   
   # Variables to use in the computation of the likelihood function
   y_away <- ifelse(Res=="A",1,0)
@@ -51,7 +51,7 @@ efficiency.test <- function(home_odds,draw_odds,away_odds,Res,omit.messages = T)
   # Maximum Likelihood Estimator
   theta_final <- optim(par = rep(0,4),fn = l,hessian=TRUE)
   
-  # Likelihood under the null hypothesis (the market is efficient in the wear form)
+  # Likelihood under the null hypothesis (the market is efficient in the weak form)
   L0 <- -1*l(c(0,1,0,1))
   
   # Likelihood under the maximum likelihood estimator model
