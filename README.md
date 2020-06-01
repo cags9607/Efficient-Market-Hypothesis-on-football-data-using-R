@@ -149,7 +149,7 @@ cowplot::plot_grid(plot2,plot3,plot1)
 
 From the plot it seems that bookmakers tend to offer generous odds
 when the match outcome is highly probable. However, the above test
-says that chance alone would produce this result about 36% of the time.
+says that chance alone would produce this result about 61% of the time.
 
 # References
 
